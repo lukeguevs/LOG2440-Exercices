@@ -44,12 +44,23 @@
           </section>
         </div>
         <div id="rating">
-          <h3>Donnez une note entre 1 et 5 :</h3>
+          <h3>Donnez une note entre 1 et 3 :</h3>
+          <select id = "rating-select" required>
+          <option value = "" selected disabled hidden>Choisir</option>
+          <option value = "1">1</option>
+          <option value = "2">2</option>
+          <option value = "3">3</option>
+          </select>
         </div>
       </div>
       <div id="comment">
         <h3>Ajoutez un commentaire!</h3>
+        <label for = "title">Titre:</label>
+        <input type = "text" id = "titre" required placeholder="bonjour">
+        <label for = "title"> Message:</label>
+        <textarea id = "message" name = "message" required minlength="10"></textarea>
       </div>
+      <input type = "submit" value = "Envoyer">
     </form>
   </main>
 </body>
