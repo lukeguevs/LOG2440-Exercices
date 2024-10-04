@@ -14,14 +14,20 @@ form {
 }
 
 input {
-    box-sizing: border-box;
+    box-sizing:content-box;
+    width: 100%;
+    margin: 5pt, 0 pt;
 }
 
 /* Sélecteurs multiples pour l'élément <input> */
-
-/* Pour tester */
-.a_remplacer {
-    background-color: blue;
+div > input{
+    background-color: aliceblue;
 }
+
+
+.rounded-border{
+    border-radius: 10 px;
+}
+
 
 /* Exercice supplémentaire */
